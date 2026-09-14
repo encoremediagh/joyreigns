@@ -1,0 +1,8 @@
+.hero{position:relative;transition:opacity .35s ease,background-image .45s ease}
+.hero.changing .hero-content{opacity:.2;transform:translateY(8px)}
+.hero-content{transition:opacity .35s ease,transform .35s ease}
+.hero-slider-controls{position:absolute;right:clamp(22px,7vw,110px);bottom:78px;display:flex;gap:9px;z-index:2}
+.hero-slider-controls button{width:34px;height:4px;border:0;padding:0;background:#ffffff73;cursor:pointer;transition:.2s}
+.hero-slider-controls button.active{background:var(--gold);width:52px}
+@media(max-width:640px){.hero-slider-controls{right:22px;bottom:32px}.hero-slider-controls button{width:24px}.hero-slider-controls button.active{width:38px}}
+@media(prefers-reduced-motion:reduce){.hero,.hero-content,.hero-slider-controls button{transition:none}}
