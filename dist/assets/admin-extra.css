@@ -1,0 +1,6 @@
+.row.three{grid-template-columns:repeat(3,1fr)}
+.check{align-content:center}
+.line-row{display:grid;grid-template-columns:1fr 90px 120px 42px;gap:8px;margin:8px 0}
+.line-row input{padding:10px;border:1px solid var(--line)}
+.remove-line{border:1px solid var(--line);background:white;font-size:1.2rem}
+@media(max-width:720px){.row.three,.line-row{grid-template-columns:1fr}.remove-line{width:42px}}
